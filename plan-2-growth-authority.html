@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Growth &amp; Authority Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Roboto+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF; --surface:#F7F7F7; --surface-2:#F0F0F0;
+  --ink:#000000; --ink-2:#313131; --muted:#6B6B6B;
+  --rule:#DCDCDC; --rule-strong:#C4C4C4;
+  --accent:#F2295B; --accent-soft:#FDEFF3;
+  --ok:#1E6B4C; --ok-soft:#EAF3EF;
+  --gone:#8F5410; --gone-soft:#FBF2E6;
+  --f-body:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --f-mono:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --logo:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAB9CAYAAACrvLTMAAAkC0lEQVR4nO3deZhT1f0/8PdZ7pJkkplhYFgUAUGEKqIiAlItFrdWKlZHqKhVWv1W0QpV3L62tf7sJrZakW7fblor1gpWrVUrRa1sWq1V3LXKJiIMMwwzSW5yl3N+f2SwKNvNJJkk8Hk9z30eSO4595M7yT33nHsWSCkjvXv3ng1Ah9mEEFvi8filIHkZOXIkLrrooqkIeZ6LtHmMsTbbtlfbtv1PAE9xzv9uWdZvhRA3MsYuP+CAA4488MADebechNIZCuDvyOPcCCGWCSEOK0+41cc0zVOFEO8hxLnlnKcYY58t5vFra2t/YZpmd/1ufADtlmVtqKmpeVNKuRzAUwD+IaV8JBaL3SGEuAnAN6PR6NnHHnvsoPr6elHMz9ttqADoHmUqAEJtnHMlhFgnpVwIYMaQIUMGH3XUUaU8HUV16aWX4rrrrrsIeX7uRCLxg3g8Xp6gq0htbS0ikcj9CHleDcP4HufcLnIM3VkAdGmTUn7IGHtOCDHfsqwLAIxdsGBB9PDDDy/mqSguKgC6RyUXADvbGGMfCiF+alnWiVLKWKnOS7EIIXp3FmChP6MQ4i0hxPFlCrlqSCmbOOfrEO7i38w5P67YMVRDAbCrzbKslYyxH0cikSm1tbWNQlROZaHaq/6kRLTWvYMgmJHNZp/wff9NwzB+YBjG0HLHtSsXX3zxxiuuuOKPALaETRMEwVDDMM6w7aLerO5V+vTpg1gs1qSU2j/M/pzzuzjnL5Y6rmqSzWZHaK2vcBznvo6OjrVKqX/Ytn1TNBo9gPMyX4KpBtA9qq0GsIvNlVL+VUo5vvhnqHCmaVqmaf4aeXwmzvkHnPMvlCnkiielnCqEeB/hzuVaxti4UsRRzTWA3W1SyldN07xi/PjxjYlEorgnLQSqAZB8GL7vf973/aUAHp8+ffqI7373u+WO6SOu62aDILhLSvl62DRKqb5CiLMNw6grYWhVKR6PQwgxNQiC/cLsX1dXd6dt2/8qdVx7E9/3D3Fd98fLly/f6DjOvf369fu0aZpGtwVANYDusZfUAD62McY6TNP8vmEYFfMklTEGzvn/Q36fJQ3gvLIEXME452cxxsLe/W9gjH26VLHsrTWAnW1CiOV1dXWnCiHMop3AXaAaAOkyrXWN67rX+b6/nHNesh9/PrTWYIw9LIR4IY9kkWg0OjkSifQqWWBVpqamBoZhTNNah7r7l1LO45yvKHVc+4IgCMa1tbU9orV+LpFIHC9K+NSYCgBSMK31oUqpx3r27HlN3759yx0OTjrppBcmTZr0h3zSpNPpM2fMmDFl5syZpQqrqriue77v+8eE2Zdz/q7neYuCIAhKHde+RCl1eHt7+5NCiEcaGhqGSymLfxBqAuoee2MT0M42y7Juj0QiJfim5u0g5Dk4zDCMxZXc06m7RKNRmKb5AEKet4aGhm9Fo9GStlvvS01AO9s451nG2CwA0cLP5n9Vwg+V7Egh1y7tAWB5ppUAbJTpb5vNZi8XQtRIKWf4vp8tRwwA8PWvf/2dWCx23w9/+MOJYdN4nvfZWCw22TCMW9LpdCnDq2iO40zTWo8Ns68Q4q0tW7Y8ppTySh1XvqLR6LOu6y7yfT+Jwls7GAAT//096kQi0TOdTg/0fT8ipewdBMFQrXVJ2u2VUiaA2wzDONH3/Zla6/8UI18qACrTKgCXAvhbVxIfdthhuPDCC83XXnut/uGHH+61YcOGBs45IpFIjyAIhnie18M0zRGZTOYzWuua4oYOBEHwFcuyXMMwLnMcpyzNAnfccQeklI9KKf/i+37obp6ZTOY0AI8BeLV00VWumpoa4fv+GZlMJlRbntb6bq11Rfb779u377+bm5tvb29vbylF/u3t7R/92/d9DBs2LLFu3bqDs9nsAMbYQKXUZ5VSE7TWkWId0/O8zwM4pH///hds3LjxH67r6oIypCag7pFnE9B/AJxc6pjGjh2L888/vyeAybFY7CcAQs31EnbjnH+v3ANdGGNTGWNtn4xtd1s8Hv9eLFbxg59LwjTNc4QQGxDuWvAu5zxUTaFQXWkCGjx48M8SiURDd8S3K7Nnz8bgwYOHAfhfzvnzANxPxtnVra6u7vyCewpRAdA9KrEA+KRjjjkG55133jAAP5FSrgoZ6+4KgK2c8wu7+3NsLxaLRWOx2J07i29XmxDiTSHEZ8oTcfnYth0xDOMxhDxPtm3PNozu6bJerQXAJzU0NPSORqPXcs5fR27SuYJ+YzU1NVcLIbr8XIB6AZGPLF++HHffffebAGYBOMK27Zmc89VdzU8plRBCfNWyrEOLFWO+UqlU2nGcP3POPwybJgiCg6WUky3LKmVoFSebzU7zfX90yN3fyGQyT3texTX9V7SWlpaN6XT6h/vtt9+hsVjs80KIZxljqqv5JZPJmznn1zDGujQWhwoAslO+77dlMpm5nPPDLMv6IWP5PovO8TxvrFLq4nJeTKWUD0kp780njed5Uz3Pm1SqmCqNlLIH5/xsrXWoO+YePXrcFYlEKrLtvxqsW7dOpVKpJy6//PJxQ4YMOQUFPHPyPO/bnTdrebdbUgFAdsv3/Y7evXtfd8ghh5wMYE1X8lBKnRYEweQihxaa67pQSt0npXwpbBqlVL99bIqILwEIdffPGHultbX1CcdxunznSnJuu+02vPPOO4sAjOCcXwOgtSv5OI5zk2VZF+Q7DTcVAGSP1q5di5EjRz5xyy23TALwTL7pgyDor7U+oyQDWUKybfu5aDT6QD5pPM/74r5QC4hGoxHO+alBEISajaxXr16/ramp+Xep49rXKKXmMMaOZYx16dw6jjPPNM1TOeehRw5TAUBCueeee3DVVVe9aprmhbZtP5FveiHEMUKIbn+wvU0ymURHR8dfGGPP5ZEsEolEzrFte1DJAqsAjuPM8Dwv1LoIlmX9q7W19clkMlnqsPZJWuvXe/XqdaRlWfcDyLsLted5v7Es6/Cwve+oACB5cV33nWw2ew1j7Pk80w0599xzP3PDDTeUKrQ9uvzyy1+aPXv2PfmkcRznFN/3T6+kRTyKqaampodpmieH7auezWbv8n1/Zanj2pdt2rQJvu9PsSzrJ4yxvEYkBkFQm81mfxl2/QbqBtpNqqEbaFjnnHMOvv/97zchzz7NUsrFhmEMKE/UOaZpDrAsK3RXR+TifkoIMaxMIZeUEOJSzvlWhDsPz3HOy9Kja2/pBpqPcePGob6+/gYA7cize6hlWTdxzvc4yJNqACRv99xzD7773e8uSCQSc/JJp7UeqpQ6olRxheG67hrXdf/EGAs9TYXv+xMikciXIpGiDeisCLZt9+OcNymlQrX9Synv4pzvkyOky2HFihUYNmzYjYlE4rcAMvmkzWaz3+zfv//hprn7cWJUAJAuSafTSKfTC03TDD3tchAE+0+YMGFYU1NTKUPbI8uyHrQs68F80jiOc6bruqFmx6wWnudNC4JgTJh9DcN4zvO8Jb7vlzossp0VK1bgkEMOmVVbW/sw8nwm8MEHH/zY87x+u9uHCgDSZUqpfyulHshnjMCyZcuOfPTRR8u6CG8mk9nied69Qoh8BocdGolEJu8ttQDLshoYYycrpUJ9oHg8/mvLsl4pdVxkRytWrEAQBNOFEG/mk87zvKNt2z5jd11DqQAgXaaUglLqGc7522HTBEHQJwiCA0oZVxixWOyhWCyWV7fQdDp9djabPaVUMXUn13W/FgRBqOkuhBBPt7W1LdmXZ0gtt2QymZZSzuScf5BPOs/zbtBa73JiPyoASEE45y8JIRaF3V8p1cP3/T6ljCmM9vZ2pFKp+/O5q1JK9eecT5VSFn0G1e5kGMZ+nPOTtdahJvLp06fPPfF4/K1Sx0V2L5vNLtZa/xGAEzaN7/s9Lcs6Z1ejhKkAIAXxfT/l+/5zYbtJcs73F0IMLnFYodi2/bRt23/JJ41SqkkpVbWDw26++WZMnTr1S0EQHB1mf8753z744IOnt27dWurQSAha6xuQ54j8TCZzrVJqpzddVACQgiml1imlQn0pfd+v9TyvIrpUplIppNPp+fkMDlNK1RiG8QXTNOtLGVupXH/99YPmz59/OnKLBu1RPB6/z7btoiw+QooiaZrmzzunOA8rVltbO1kIscPzHioASMEMw3jVNM1QU0RorfHVr37VKueAsO3V19e/VF9f/1A+abLZ7LRvfOMbZ82YMaNUYZXEnDlzMGXKlPOUUuPD7C+lXNTR0bHEcUK3OJBu4LruXK312nzSOI5zoVKq5ydfpxXBSMFisdhm0zTf37RpU6j9Fy1alLDtsnYE+khraytM01xomuaJruuGmg4BAObOnXu61voJAKtLF11x3Xjjjf1935+IkMuMHnrooXc1Nzf/Z/369SWOjOTLsqw7Pc+7QSlVG2Z/13WHc85Ha60/wHbdSakGQArW1taGTZs2hb5KrFmzpu6tt94KNfioO7iu+7bneX/Opzur4zif833/tGqaIsJxnK+6rntcmH0Nw1j0yiuv/JMu/pVJa32X1jrcHVcnzvkXGWN1H3utqFGRfZYQoiWPi6FAhX33YrHY/bFYLK+mIACTARxciniKzTCMgYyxiVrrUPsrpe5TSr1T4rBIF7mu28o5f5Ix5oZN4/v+uZ9c76GifoSkenHO1wshqvaCkUwmP0wmkw8DyGeKiM9GIpGmSh8cNm3aNIwZM+bssKN+pZR/AbA4bGFBykMp9bDWOq/1A2Kx2Oe2HxhGBQApCt/32zzPC1UljUajRjwer4yHANsxTfNB0zTz6haaTCbPdBwnVJfKcpk/f/7gpUuXngogVL//2traB2zbXl3aqEihLMt6lHO+OZ806XT6C9s/N6ACgBSF7hRm30gkYtfU1HR5IetScV231ff9e/JZPxjAEX379j21V69eJYurUFLKL3HOx4XZlzG2qLW1dVkqlSp1WKRAmUwGjLFl+UxsqLUef8011yQaGxsBUAFAisdDyOYTx3GMZDK5+2kKy6SzFrAwnzQbN248t6WlZWKpYipEJBIZzDn/nFIq1G/9tttu+8UZZ5xRtU15+xop5Z8YY/k0A9m33nrrsc3NzSZABQApkmg06iQSiVDLRKXTad7R0VGR3WcymQw8z3tACBF6fiOl1IFSytMNw6i4Qs1xnC+7rhuq378Q4t4rrrhixcKFeZV/pIzi8fgyznl7Pmk450cBiAJUAJAisW3bjcViec1ZXqksy3rStu0H80kTBME0pdTnSxRSl1iWdbBhGCeG3N0fMWLE/X379t1Q0qBIUW3evDmrlGrOM9lnANQAVACQItpbeo2k02k4jvMHzvnysGmCIOhhWdYZkUgk1MCcUhsxYgT69OkzzfO8sWH2j8Vi977xxhvLqN9/9RFCPMAYCz1ZUzab/dTVV19d29jYSAUAKQ7OORchBwLU1dUFvXr18kodUyEMw3jFMIxH8kmTTqfPdRxncqliysdrr702fO3atSch5KjfVCr1QDabzWtgEakMhmG8zRjLq/b985///NCWlhZJBQApis2bN0fXr18fanSv1jqjlKroCWay2Sw45/dHIpEn80jGIpHIWbZtl3Xd42nTpuHTn/70l7XWoe7+Lcv6jZQy1FxOpPKk0+nXlVJ5LdaglDpYa21RAUCKxUbng6U9SSaTma1bt1Z8P0PHcf7jOM49yGP+dcdxJvm+/4VyThExf/78Ec8880yoXkmcc8913Qd9389rQBGpHE1NTasaGhrymq/bdd3Paa0TVACQosinCSgIAu37vip1TMXQOVFcXoPDtNanAxhamoj2jDF2NmNsdJh9Oef3cs7/WeqYSOksWLAAHR0dLzPGQjeraq33A2BQAUCKgnPeh3M+MOTuVfO02HXdrUEQ3CuECL0UXxAEE8s1RYSU8ojO1b7C7N5+880333vGGWdQ23+VC4KgBYAfdn/P8/prrSM0HTQpiiAIBgDY5dqj22tsbNxqWVbbunXrShxVcdi2/SBjbGIymbwsbBrHcaZorRcDCL3YTKE45wiCYIrW+sgw+zPG7r3yyiufLXVcpPSEEK91PlcLfddx2mmn1bDGxkZ24403Rjds2JBgjO3xtsEwDN3c3Jy8/fbbK74Nt5JMmDAB3/nOd+zHH3+8wbKsYDe7Mtu2/RdffLH9/vvvDz3Eu9xGjx4dnTp1an1HR8fuPhs8z+NHHHFEcsWKFe233nprd4VXsBNOOCFyyimnJDo6OvbYq0ZrjR49emDhwoVblyxZ0m0PuydNmsSPPfbY2nQ6bWMPtaxEIiHuvvvu1pdeeqmiH8Zvc8EFFySGDx8eDbswvVKKH3jggclbbrkl+frrr1dFc2MhLr744ki/fv3iQRCEbdXhNTU1LSUNihBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghVWcYgBcBPA3gKQBPM8Yel1J+xzTNQ4p0jF4Abuo8zh8BjClSvpBS9ozFYv/LOX+Zc97BGOuQUr5uWdZt0Wi0d1fzHTVqFKZPnz4ZwGsAHgMwtcBQRwF4CMBS5M7z9ttyAHcBOLzAY2xvAud8sRDiK0XME8jNuX8XgP8pcr6lIjjnZ5umuZhz3sI5T3PO18fj8Yts2y4k35EA7kTub/fJv+dS5P7WRxWQ/znI/VZ2lkctcn+DmcgtClSIcwE8DuAZ5GJfwjl/yLKsizjndQXmvc2FAP4G4GUAUwAYRcoX0Wh0pJTyTiHEewAyUso1nPM/1tfXjzCMoh2mqCptOug6AEcAWADgRc55zDTNwZlM5nwAN0gp7zQM42uO47gFHMNH7o9+BIAMgGShQUspYVnWcZlM5veO43Ct9Xyt9XoAXCl1sJRyuOd5EwDc19VjcM4Zche8OIC2AkPegtzFIiqEsBljX9BaG5zz33ieVwNgQxGOAQCIRqO2EOLMjo6Oz0YikXYhxJ+SyWTB57xTHMBoAB8WKb+S6bwA3OJ53sW+7/8FwLeUUoJzPj6VStUopaIA8lrWbzttAJ4HsB5AC4CvAOiJ3O+oGbnv+ZYCwh8AYByA+p28ZwA4GkAHUPAa40OQuwlcBOA9y7LqtdYHu677EwA/YYxdprX+A4BC1pNuRa7ArEduveTdzl4bxtFHH41Vq1Zd19zcfCPn/F+dMX7o+3495/ysLVu2rBRCnMcY+6PWOvSc/fuiY5D7435p+xeFELFoNHotAN2jR49fjRlT8E37EQD+A+BHhWYEAJzzkVLKtwzDeCoWi+3wI0kkEtaAAQNCrZe7K/X19b0HDhz4EHJ3L0UTi8V6RCKRhWPGjHns3HPPLWbWAADG2FFCiEellO8JIf7JGDuriNmPAvA6gJuLmGdJCCFGA3i/Z8+et9bV1X3svaamJnH88ccXc3GmPwJ4BcDwIuX3vwDWADhxJ+/1BPAGgHkIuSTobnwPuYLsY+sZCCH245z/HYAeP378yX369CnwMPgngL8C6FdoRgAghJgCwDFN85ec8x7bv9ezZ0+YpvkggLZTTjllbM+ePYtxyKKpihXBgiBIZbPZO6LR6Pe2bNnStHLlylDL3XUHznmCMfY/ACzTNKenUqkd7rTa29uza9asaS9DeGV1/PHHY8qUKScEQdBfa32tUqolFoudVFtbW+7Qul0QBAYA85JLLmltamr62HsLFiwInnrqqb1+zvquCoJgvWmaFwgh3n7hhRdmNzc3H1DumLaZOXMmBg0a9A0AL3ue932l1MfWVt68eTMATGeMJRctWvTllpaWunLEuSuV1gS0S0EQpBzH+ZuU8hrXdUcgd6dQdlrr/TjnY4IgeC6VSq0udzyV5JlnnmnknI+3LOttzvmfHMc5MpVKfZExNhTA2+WOrztJKddqrd+66aabLhVCvMAYezzkso0EQCaTeV9K+ZjneV9USvUFsLbcMQHAvHnzRgVBcMigQYOu3rhx4/s7W7DGdd0tnPO3GGOHI/fMpK2bw9ylqqgBbKdNKbUqCIJiPRAuGGNsfynlAaZpPl7uWCrQeM75EN/3H3UcB0KIJVJKQyl1arkD626+77/PGLtGCNESBMFjnPP5QoiyLRxfjXzfbwUQMMZEuWPZJgiCQQDiq1ateiudTu/yeYJhGEtt2z6AMVZQU3CxVVUBoLVWQRB4qKCai1LKzmazUc/ztl9ezQZwNQAXwCYA7wGYVYbwyqa+vh4NDQ0js9msyTn/JwBorV/2fX+dlPIzldoropR8319uGMYplmX9LAiCs4IgWB6NRi+yLKtivs8VzmdsjytyVqR4PJ60LEswxirqmltRwewJYyxhmmZ/y7LeKHcs2wghUtFo1DEMY+B2L7sA7kfuodm3kOuF0VCG8MomlUoN37p16+TOrnACwHGc8wFCiE1KqVFKqfHljrEcMpnM+9ls9tJYLDYoEoksSqfT/yel/EaB3UArgcYe1iEuFGMsHgQBtNYF99wpIg0AM2fOlIMGDdrlTm1tbYOSyeTGzoXbK0bVFACmabIePXp8ynVdEQTBynLHs43Wep3jOGvq6uomjRo1atvLCsAqAP9A7llFClV0rgt1/vnn49vf/vaIbDY71Pf9Udls9lEA9/m+f7/v+xO11vsppSaUO85ySqVS7yulzjZN8/fpdPpr2Wx2bLlj2g2XMaawk++wYRgCgDzggAM21dXVlezilkgkmJRyYiQSWS2lrJhuvw0NDUtM01w/d+7c01avXr3L3g2+709QSr2DwrrjFl1VXJQGDRqEGTNmjGxpaflB58Oz5eWOaRvG2HrDMJ7atGnT2FdeeeXkcsdTCRYsWBCZM2fOJM75a4ZhDEGuu11fAP0ikcjgaDT6sNZ6Eue8V5lDLatsNgvP8/4FwNBaF9y3sVQSicRzkUjE4pyP/GQTDGPsEAC9Z8+evebYY48tyfF/9atfYcyYMd/yPO+oaDT6SynlmpIcqAtaWlo2ua67XGt97jHHHDOsvn7HoRK2bTcBOCgajT4ihGjZMReyzcfGAUSjUTF06NCDTNP8JoCklHJpTU1NoX2NgVzTzHoAvyxCXuCcDzVN81kAzaZpnh6JRAAAI0eOxMUXX3wccmMObupq/kceeSQuu+yyIYZh/APAkmLEvE0pxgEwxkYDeHfixIk/O+usHbv9M8YuEUK0cs6LMaK5KsYBmKY5qlevXk2xWOyjEeHRaLS3ZVlLTNNcYprmrtsP8lfUcQDRaBSGYTwuhGixLOtEznP3jaZp9pRSLjcMYxnnvBgPtD82DmDo0KFmY2PjSM75nwBoxth1KHy0MZAbBbwUuUFnBTMMYz/G2NuMsfWRSORkvu0EATBNs4kx1mGa5n2c8y7PBrCvOBr/bUvctikAqyzLurZnz57FqLHsD+DPnXmvBvC5IuQJxtggKeVDjDEtpXTi8fg7pmluAqA5528yxiZ1Ne/OqSBmdMacAnBVMWIGSjYQ7DrO+RbO+cSdvSmEONIwjNcZY3cVeJwjADyHHb8z7wM4rcC8i8qyrHGGYbwEQJumud627bWMMQ1g9Y033jhx+vTpxTxcsQeCQUo5TAixGIC2bfvDSCSyrvO7/h/TNI8r0sPZ65EbDf3R35IxpjnnL0aj0c9JKYvR++d72x3jSgBmEfJEPB4fbBjGEwC0YRhtNTU173DOs4wxbRjGbxhjjcU4TrFV2iP1OICx+O9Qb967d+/20aNHr3zkkUcKmf5hexaAg5BrkuhArj96625ThGeYpvkpIcR4x3H6McY21dXVvWCa5sqNGzd2efqDUaNG4bDDDtvvd7/73aHIfXlXA1hXjIBjsZihlBp62GGHiYMOOmjlH/7wh0Kz5ACGRqPRhBDilY6Ojp21Cwvk7r5M5C5UXR0eX4Pc9Bj1+O+Qfg7AAfAOgM1dzLfozjzzTLS1tQ1YvHjxWMMwhgZBEEgpX/Z9f5lSqq3Ih/sUgBhyc0d1dXqJHZimmTAMY2wmkxmltTYjkcgrrus+6XleW5EOMaBzE8hdoOWAAQPebW1tXdvR0VGsB7+DAPRHribxBnI3C0V5eH3CCSfgvffeG71q1apjtNY9DcNYU19fv6Stre1d13VpCghCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhOxISmn37t37EuQmjdqwh22TEOLNeDxe1KkL9wUjR47ERRddNBm5iad2d45bATwLYEJ5IiXdJRKJTLYsayWAFuz5t5cWQtzJOd+vXPGWU21t7RzTNDcC2Ig9n6sNAJzBgwf/MJFI7DhB/15m9uzZ2H///f+C3PKzYc7NBgBZAEMkcjOCxgBEOrc9MQAUY07+fdG2ucz3tPhHT+RmLSV7MSmlHwRBDYAeYfYPgsABsLW0UVWsBIB8p1ROoEoWvSrEvHnz+riuOxxA6AWWOpdm9fb6k0PI3sK2bWmaZjHmxCd7ESHEYOS5UA7n/EMAPhUAhFQJzjlnRVp5hew9XNf9lNY6TOvNR0zTfIwx1k4FACFVwrIswzAMWe44SGVRSn0BuUWRQkulUq8rpTJUABBSJVhOucMgFWT48OEwTXOI1jqvL8Y111zzYmNjo0d3E4RUCdM0Da01PQMgH1mzZs2YbDYbzyeNZVlvzZkzp01rvfc/ISdkb8E7lTsOUjk8z5uitW7IJ41S6kkASWAf6CJFyN5CCCGoACDbXHXVVejVq9eEfB8ASymXM8ZSAEBNQIRUia1btwrfp557JGfevHmfz2az/fJJwznf6jjOUgAeQAUAIVWjvb1dgGrtpFMQBKdprUMNItzO0+hs/gHoy0RINZEA6CEwgWEYgzzPO0lrbeaTbuDAgb+2LKtl2/+pBkBI9WCdG9nHKaW+BqB3Pmksy3pz1apVL2ut9bbXqAZASPUwQDdt+7za2tq+AM7UWuc1J5vW+rfITTz4ESoACCGkiiSTyTlKqYF5Jtsya9ashxobG9Pbv0h3E4RUDxP0m92nRSKRU7LZ7EStdV7fAyHE/91yyy0btmv9AUA1AEIIqQrRaDTmuu43lVJ980nHGHODIPi11rrjk+9RAUAIIRXugQcewIABA+YGQXB0vmkty7qJc75hZ+9RdZIQQipcU1PTbKXUmch1BAiNc74qk8n8HkBqp+8XIzhCCCGlUVNTcxpjbDaA2nzT1tfXz5ZSrt/V+1QDIISQCmUYxvhUKjVXa51Xn38AkFLe19ra+ozWOtjVPlQDIISQCmQYxkm+7/9Jaz2gC8k3L1y48PoDDzxw8+52ohoAIYRUGM55k+d585DnaF8AYIzBMIzzTj/99Pc+2e1zh+N0NUBCCCHFF4lEzgbwU3Th4g8Atm3f5Pv+Ur2nqz+oACCEkIohpbw+k8n8QinV2MX0d2cymduVUsk9701NQIQQUnYNDQ21HR0dP3Ndtwm5Ed95k1IuD4LgWq11y5737kzTlQMRQggpjlgsdlxbW9tPgyA4tKt5cM7f9n3/QgAf5JWuqwckhBDSdY2NjY3RaPT2VCr1aCEXfwCbIpHIuZzzN/JNSDUAQgjpRv37949v3rz58ubm5su01n0KzG5rbW3t6clk8nmlVN6JqQAghJASGzNmDN57773D29raZr7//vtT8p3Lf2c451uUUidu3br1X13Oo9AgCCGEfNysWbMwYMCAYQDOtm371ueff765ubn5357nXVCMiz+ANX369JlommaXL/5AF2oAQRDUdnR0/ADA9dj7lqeLAfgrgLPLHQghnySEEFpr3pWqPim+r3/962LVqlW9X3jhhcHNzc2HBEHQYBhGX9/3B86dO/dQrfX+AEQmkyn2oZ8dP378l1euXPmO67oFZdSVJiAGIN657Y16lDsAQnaGc86VUlRrD+ndd9+9BMAlpcr/jjvu2OE1z/MAACHGYHWJYRgLfd+fsWzZsk3FyI++TIRUCSGE4JzTb3YfZRjGtb7vn6+1LsrFH6ACgJCqwTmnAmAfxBhbV1dXd6rW+sda653O699V9GUipEoIISTnXJQ7DtI9Osv6348bN25sEASP+r7vF/0Yxc6QEFIarFO54yClxxhb2rdv32NM05y+fPnyDzo6dljOtyhoHAAhVYJzTjWAvRzn/CUhxA983394/fr1Re8+9ElUABBSJejuf+/EGFNSysWmaX7fcZylnucVvalnV6gJiJAqsWXLFjOZTNJN215ACNHBGFsM4Oorr7yyd58+fU5KpVJPK6W67eIPUA2AkGrCsPcNvtwncM59wzCeUko973nes+PGjVv26quvtra1teFHP/pR2eKiAoCQ6iEB0DOAyqKFEG2GYax3XbdVKQXbtrdorV+zLOtf7e3tW2bNmvXqgw8+uHn16tUfjQ5bunRpOWP+yP8HVNBHn87T+SQAAAAASUVORK5CYII=");
+}
+:root[data-theme="dark"]{
+  --paper:#000000; --surface:#0D0D0D; --surface-2:#191919;
+  --ink:#FFFFFF; --ink-2:#D6D6D6; --muted:#9A9A9A;
+  --rule:#242424; --rule-strong:#3A3A3A;
+  --accent:#FF5C82; --accent-soft:#280C13;
+  --ok:#5FC395; --ok-soft:#0C1F17;
+  --gone:#DFA75E; --gone-soft:#241A0C;
+  --logo:url("data:image/png;base64,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");
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-weight:400;font-size:15px;line-height:1.66;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(18px,4vw,44px) 100px}
+
+/* masthead */
+.mast{border-bottom:1px solid var(--ink);padding:clamp(28px,4.5vw,52px) 0 24px}
+.brandbar{display:flex;align-items:flex-start;justify-content:space-between;gap:22px;flex-wrap:wrap;padding-bottom:clamp(26px,4vw,44px)}
+.logo{width:clamp(140px,15vw,186px);height:clamp(45px,4.9vw,60px);background-image:var(--logo);
+  background-repeat:no-repeat;background-position:left center;background-size:contain;flex:none}
+.logo span{position:absolute;left:-9999px}
+.brandright{display:flex;flex-direction:column;align-items:flex-end;gap:13px}
+.brandmeta{font-family:var(--f-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);text-align:right;line-height:1.9}
+.brandmeta b{color:var(--ink);font-weight:500}
+.themetoggle{display:flex;border:1px solid var(--rule-strong)}
+.themetoggle button{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+  padding:6px 11px;background:transparent;border:0;color:var(--muted);cursor:pointer;transition:background .14s,color .14s}
+.themetoggle button+button{border-left:1px solid var(--rule-strong)}
+.themetoggle button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+.kick{font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{font-weight:200;font-size:clamp(2.1rem,5.6vw,3.5rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 12px;text-wrap:balance}
+.sub{font-weight:300;font-size:clamp(1rem,2.2vw,1.24rem);line-height:1.52;color:var(--muted);margin:0 0 32px;max-width:58ch}
+
+/* price header */
+.pricehead{display:flex;flex-wrap:wrap;gap:20px 36px;justify-content:space-between;align-items:flex-end;
+  border:1px solid var(--rule);border-top:3px solid var(--accent);background:var(--surface);
+  padding:24px clamp(18px,2.6vw,28px)}
+.pricehead .l{max-width:56ch}
+.pricehead .l p{margin:0;font-size:14.5px;font-weight:300;color:var(--ink-2);line-height:1.58}
+.pricehead .r{text-align:right;flex:none}
+.price{display:block;font-weight:200;font-size:clamp(2.4rem,6vw,3.4rem);letter-spacing:-.04em;line-height:1}
+.term{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin-top:9px;line-height:1.8}
+
+section{padding-top:clamp(42px,5.5vw,66px)}
+.sec-head{display:flex;align-items:baseline;gap:15px;border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:24px}
+.sec-num{font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.12em;color:var(--accent);flex:none}
+.sec-head h2{font-weight:300;font-size:clamp(1.32rem,3vw,1.9rem);letter-spacing:-.022em;margin:0;line-height:1.18}
+.lede{font-size:15.5px;font-weight:300;max-width:70ch;color:var(--ink-2)}
+.lede strong{color:var(--ink);font-weight:500}
+p{max-width:70ch}
+
+/* workstreams */
+.ws{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.ws-group{background:var(--surface-2);padding:13px clamp(15px,2.3vw,20px)}
+.ws-group h3{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink);margin:0 0 3px}
+.ws-group p{margin:0;font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.item{background:var(--surface);padding:16px clamp(15px,2.3vw,20px);display:grid;gap:6px 18px;grid-template-columns:1fr}
+@media(min-width:720px){.item{grid-template-columns:34px 1fr}}
+.item .n{font-family:var(--f-mono);font-size:11px;font-weight:600;color:var(--accent);padding-top:3px}
+.item h4{margin:0 0 6px;font-size:15px;font-weight:500;line-height:1.4}
+.item p{margin:0;font-size:13.5px;font-weight:300;color:var(--ink-2);line-height:1.6}
+.item p+p{margin-top:7px}
+.item .why{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;color:var(--muted);margin-top:8px;display:block}
+.item strong{font-weight:500;color:var(--ink)}
+
+/* bonus */
+.bonus{border:1px solid var(--ok);background:var(--ok-soft);padding:22px clamp(18px,2.6vw,26px)}
+.bonus .tag{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--ok);display:block;margin-bottom:12px}
+.bonus h3{font-weight:300;font-size:1.4rem;letter-spacing:-.02em;margin:0 0 10px;line-height:1.2}
+.bonus>p{font-size:14.5px;font-weight:300;color:var(--ink-2);margin:0 0 18px}
+.bitem{border-top:1px solid rgba(30,107,76,.28);padding-top:14px;margin-top:14px}
+.bitem h4{margin:0 0 6px;font-size:14.5px;font-weight:500}
+.bitem p{margin:0;font-size:13.5px;font-weight:300;color:var(--ink-2);line-height:1.6}
+.bitem .why{font-family:var(--f-mono);font-size:10.5px;color:var(--muted);margin-top:7px;display:block}
+
+/* removed table */
+.scroller{overflow-x:auto;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:13.5px}
+th,td{padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;background:var(--surface-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+td.was{font-weight:500;width:32%}
+td.tagc{width:118px;white-space:nowrap}
+.rm{font-family:var(--f-mono);font-size:9.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  padding:4px 8px;color:var(--gone);background:var(--gone-soft);box-shadow:inset 0 0 0 1px var(--gone)}
+.rm.paid{color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+td.why2{font-weight:300;color:var(--ink-2);font-size:13px}
+td.why2 strong{font-weight:500;color:var(--ink)}
+code,.mono{font-family:var(--f-mono);font-size:.87em}
+
+/* removal reasons */
+.rsn{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr;margin:22px 0 26px}
+@media(min-width:760px){.rsn{grid-template-columns:1fr 1fr}}
+.rsn>div{background:var(--surface);padding:18px 20px}
+.rsn .paidbox{border-top:3px solid var(--accent)}
+.rsn .scrbox{border-top:3px solid var(--gone)}
+.rsn h4{margin:0 0 4px;font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.rsn b{display:block;font-weight:200;font-size:1.75rem;letter-spacing:-.03em;line-height:1.05;margin:6px 0 9px}
+.rsn .paidbox b{color:var(--accent)}
+.rsn .scrbox b{color:var(--gone)}
+.rsn p{margin:0;font-size:13.5px;font-weight:300;color:var(--ink-2);line-height:1.58}
+.rsn p+p{margin-top:8px}
+.rsn strong{font-weight:500;color:var(--ink)}
+.rsn ul{margin:9px 0 0;padding-left:17px;font-size:12.5px;font-weight:300;color:var(--muted);line-height:1.62}
+.rsn li{margin-bottom:3px}
+
+/* month one + escalation */
+.wk{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);max-width:980px;margin:0 0 8px}
+.wk-row{background:var(--surface);display:grid;gap:5px 20px;padding:15px clamp(15px,2.3vw,20px);grid-template-columns:1fr}
+@media(min-width:700px){.wk-row{grid-template-columns:86px 1fr}}
+.wk-when{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;padding-top:3px}
+.wk-row h4{margin:0 0 6px;font-size:14.5px;font-weight:500;line-height:1.4}
+.wk-row p{margin:0;font-size:13.5px;font-weight:300;color:var(--ink-2);line-height:1.58}
+.wk-row .ids{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;color:var(--muted);margin-top:7px;display:block}
+.wk-row.bon{background:var(--ok-soft)}
+.wk-row.bon .wk-when{color:var(--ok)}
+
+.esc{border:1px solid var(--rule);border-left:3px solid var(--ink);background:var(--surface);
+  padding:22px clamp(18px,2.6vw,26px);max-width:980px}
+.esc .tag{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--ink);display:block;margin-bottom:11px}
+.esc h3{font-weight:300;font-size:1.4rem;letter-spacing:-.02em;margin:0 0 10px;line-height:1.2;
+  font-family:var(--f-body);text-transform:none;padding:0;border:0;color:var(--ink)}
+.esc>p{font-size:14.5px;font-weight:300;color:var(--ink-2);margin:0 0 18px;max-width:72ch}
+.escgrid{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr}
+@media(min-width:640px){.escgrid{grid-template-columns:1fr 1fr}}
+.escgrid>div{background:var(--paper);padding:15px 17px}
+.escgrid h5{margin:0 0 5px;font-family:var(--f-mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted)}
+.escgrid b{display:block;font-size:15px;font-weight:500;margin-bottom:5px;line-height:1.35}
+.escgrid p{margin:0;font-size:13px;font-weight:300;color:var(--ink-2);line-height:1.55}
+.arrow{font-family:var(--f-mono);color:var(--accent);font-weight:600}
+
+/* compare */
+.cmp{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:1fr}
+@media(min-width:760px){.cmp{grid-template-columns:repeat(3,1fr)}}
+.cmp>div{background:var(--surface);padding:18px}
+.cmp .h{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.cmp b{display:block;font-weight:200;font-size:1.9rem;letter-spacing:-.035em;line-height:1;margin-bottom:8px}
+.cmp p{margin:0;font-size:13px;font-weight:300;color:var(--ink-2);line-height:1.55}
+.cmp .now{border-top:3px solid var(--accent)}
+.cmp .now b{color:var(--accent)}
+
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--ink);font-size:12.5px;font-weight:300;color:var(--muted)}
+.foot p{max-width:78ch;margin:0 0 9px;line-height:1.62}
+.foot strong{color:var(--ink);font-weight:500}
+.signoff{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px;padding-top:18px;border-top:1px solid var(--rule)}
+.signoff .logo{width:110px;height:35px}
+.signoff div{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);line-height:1.9}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script>
+(function(){try{var t=localStorage.getItem('lpyd-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="brandbar">
+    <div class="logo" role="img" aria-label="LPYD Digital Studio"><span>LPYD Digital Studio</span></div>
+    <div class="brandright">
+      <div class="themetoggle" role="group" aria-label="Color theme">
+        <button type="button" id="thLight" aria-pressed="true">Light</button>
+        <button type="button" id="thDark" aria-pressed="false">Dark</button>
+      </div>
+      <div class="brandmeta">
+        <b>Proposal &middot; Revised</b><br>
+        Natural Healing Center &middot; Grapevine, TX<br>
+        7 September 2026
+      </div>
+    </div>
+  </div>
+  <p class="kick">Plan 02 &middot; Revised after the baseline audit</p>
+  <h1>Growth &amp; Authority Engine</h1>
+  <p class="sub">The useful half of the old Plan 02, the whole of Plan 03 that survived scrutiny, and the three things nobody had scoped at all &mdash; at less than the Plan 03 price.</p>
+
+  <div class="pricehead">
+    <div class="l">
+      <p>Eighteen deliverables across five workstreams, plus three bonus items included at no charge. Four things that were quoted in the original Plan 02 and Plan 03 are <strong>gone</strong> &mdash; either the site already had them, or the Foundation Fix you have already paid for covers them.</p>
+    </div>
+    <div class="r">
+      <span class="price">$2,250</span>
+      <span class="term">per month<br>90-day initial term<br>then month to month</span>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Why this replaces both plans</h2></div>
+  <p class="lede">The audit changed what is worth buying. The old Plan 02 leaned on four items that do not hold: one already exists on the site, two are the same work as the Foundation Fix, and one is a ten-minute toggle. Meanwhile Plan 03 held up almost entirely &mdash; and its AI work is now unblocked, because the Foundation Fix cleared the firewall that made it impossible.</p>
+  <p class="lede">So rather than sell a thin Plan 02 and then a Plan 03, this is one plan: the real content and schema work from 02, the demand capture and AI positioning from 03, and the measurement that neither of them included.</p>
+  <div class="cmp" style="margin-top:26px">
+    <div>
+      <p class="h">Originally quoted</p>
+      <b>$1,960</b>
+      <p>Plan 02 &middot; Growth Engine, 2 months. Four of its seven line items do not survive the audit.</p>
+    </div>
+    <div>
+      <p class="h">Originally quoted</p>
+      <b>$2,560</b>
+      <p>Plan 03 &middot; Authority &amp; AI, ongoing. Five of seven hold; one needed retargeting, one carried a compliance risk.</p>
+    </div>
+    <div class="now">
+      <p class="h">This plan</p>
+      <b>$2,250</b>
+      <p>The surviving work from both, plus conversion tracking, GBP hours and the device diagnostic as bonus.</p>
+    </div>
+  </div>
+</section>
+
+<section id="scope">
+  <div class="sec-head"><span class="sec-num">02</span><h2>What you get</h2></div>
+  <p class="lede">Every item names the number that justifies it. Finding IDs refer to the baseline audit.</p>
+
+  <div class="ws" style="margin-top:24px">
+
+    <div class="ws-group">
+      <h3>A &middot; Structured data the site has never had</h3>
+      <p>Currently: Yoast defaults only &mdash; zero Service, zero FAQPage, zero review markup</p>
+    </div>
+    <div class="item"><span class="n">A1</span><div>
+      <h4>Service schema across the 14 treatment pages &mdash; and remove the wrong markup that is there now</h4>
+      <p>Six treatment pages are currently typed as <code>Article</code> with a <code>Person</code> author byline, including <code>/live-blood-cell-analysis/</code> &mdash; the site&rsquo;s second-highest earning page at 253 clicks, described to Google as a blog post. The wrong type comes off before the right one goes on.</p>
+      <span class="why">SCH-02 &middot; from Plan 02, corrected</span>
+    </div></div>
+    <div class="item"><span class="n">A2</span><div>
+      <h4>FAQ content written for the 12 highest-impression pages, then FAQPage markup on it</h4>
+      <p>There is <strong>no FAQ content anywhere on the site</strong> &mdash; zero question-form headings across 57 pages. So this is writing, not tagging. Priced as content accordingly.</p>
+      <p>Stated honestly: Google restricted FAQ rich results to authoritative health and government sites in 2023, so this will not produce SERP accordions. It is here because it is one of the strongest inputs to AI answer extraction, which is workstream D.</p>
+      <span class="why">SCH-02 &middot; from Plan 02, repriced and reframed</span>
+    </div></div>
+    <div class="item"><span class="n">A3</span><div>
+      <h4>First-party review capture and a real testimonials page, then Review markup on that</h4>
+      <p>The practice has 203 Google reviews at 4.9 and 225 more on Birdeye, and the website surfaces none of them. The footer links to a testimonials page and <code>/testimonials/</code> returns 404.</p>
+      <p>This is the compliant version of what Plan 03 called &ldquo;AggregateRating schema&rdquo;. Marking up review counts collected on Google or Birdeye as the site&rsquo;s own would be outside Google&rsquo;s policy and risks a manual action, so instead we build the capture, publish the reviews on the site, and mark up those.</p>
+      <span class="why">SCH-01 &middot; from Plan 03, made compliant</span>
+    </div></div>
+
+    <div class="ws-group">
+      <h3>B &middot; The pages that already rank and do not convert</h3>
+      <p>14,853 impressions currently returning 26 clicks</p>
+    </div>
+    <div class="item"><span class="n">B1</span><div>
+      <h4>Titles and descriptions for the nine tags that need them</h4>
+      <p>Six URLs sit on page one and convert almost nothing. <code>/mold-biotoxin-illness/</code> holds <strong>position 7.37 on 5,305 impressions with a 0.19% CTR and no meta description at all</strong>. Five pages sitewide have no description; four more share a duplicated one.</p>
+      <p>At the site&rsquo;s own 2.9% average CTR, those same impressions would return roughly 430 clicks instead of 26. This is the fastest-moving item in the plan &mdash; measurable at 14 and 30 days.</p>
+      <span class="why">CTR-01 &middot; from Plan 02, corrected from 6 tags to 9</span>
+    </div></div>
+    <div class="item"><span class="n">B2</span><div>
+      <h4>H1 on the archive template &mdash; fixes 20 URLs in one edit</h4>
+      <p>Twenty URLs have no H1: <code>/products/</code>, <code>/shop/</code>, and every category and author archive. All of them come from the same template, so this is one change, not twenty. The original quote said seven pages.</p>
+      <span class="why">H1-01 &middot; from Plan 02, bigger and cheaper than quoted</span>
+    </div></div>
+    <div class="item"><span class="n">B3</span><div>
+      <h4>Rebuild the booking path</h4>
+      <p><code>/schedule-now/</code> holds <strong>position 5.08 on 2,749 impressions with 35 words on the page</strong> and 19 seconds of engagement. It is the sharpest example on the site of demand meeting nothing. <code>/book-appointment/</code> has 93 words and no meta description; <code>/accessing-patient-portal/</code> has 100.</p>
+      <p>Three pages compete for one intent. Consolidate to one, put the Jane booking widget and the phone number above the fold, and write the content the position-5 ranking deserves &mdash; hours, what to expect, what to bring, how long the first visit takes.</p>
+      <span class="why">GA-02 &middot; from Plan 02, sequenced first among the thin pages</span>
+    </div></div>
+    <div class="item"><span class="n">B4</span><div>
+      <h4>Thin-page expansion: Products, Contact, Video, Hours</h4>
+      <p>The four thinnest pages after the booking set: <code>/products/</code> at 18 words, <code>/contact-page/</code> at 55, <code>/video/</code> at 65, <code>/hours/</code> at 102. <code>/products/</code> alone draws 1,107 impressions at position 7.57 and returns 2 clicks.</p>
+      <span class="why">GA-02 &middot; from Plan 02, unchanged &mdash; the original four were diagnosed correctly</span>
+    </div></div>
+
+    <div class="item"><span class="n">B5</span><div>
+      <h4>A page-by-page on-page pass &mdash; the 17 service pages first, then the rest</h4>
+      <p>The service pages are the ones that sell, and they are the least built. <strong>Fourteen of seventeen have zero or one subhead. Zero of their forty-two images have alt text.</strong> Eight repeat the title tag as the H1, two emit more than one H1, and none carry Service schema.</p>
+      <p>A fixed eight-point checklist per page: title, meta description, exactly one H1 distinct from the title, a real H2/H3 outline phrased as the questions patients ask, the correct schema type, alt text on every meaningful image, two to four contextual in-body internal links, and a check that the target term appears in the copy.</p>
+      <p><strong>48 pages in scope, not 68.</strong> The commerce catalogue is excluded &mdash; those URLs are being suppressed anyway &mdash; and so are the 19 archive pages going to <code>noindex</code>. Service pages in months 2&ndash;3, then conversion, info and blog at roughly eight a month.</p>
+      <span class="why">ONP-01 &middot; new &mdash; not in either original plan</span>
+    </div></div>
+
+    <div class="ws-group">
+      <h3>C &middot; Demand the site is not touching</h3>
+      <p>Non-brand visibility is the gap: 85% of organic traffic is branded</p>
+    </div>
+    <div class="item"><span class="n">C1</span><div>
+      <h4>Four service and geo landing pages, aimed at the metros</h4>
+      <p>The two keywords Plan 03 named are already won &mdash; &ldquo;grapevine functional medicine&rdquo; is position 1 and &ldquo;holistic doctor near me&rdquo; is position 6.27 on 897 impressions, both via the homepage. Building pages for those would cannibalise.</p>
+      <p>The actual gaps carry more volume: <strong>holistic doctor dallas</strong> (831 impressions, position 7.49, 0.48% CTR), <strong>live blood analysis</strong> (874 impressions, position 12.14), <strong>functional medicine doctor near me</strong> (504, position 13.06), <strong>naturopathic doctor fort worth</strong> (191, position 10.67). Dallas and Fort Worth, not the small suburbs the footer lists.</p>
+      <span class="why">CTR-01 &middot; from Plan 03, retargeted</span>
+    </div></div>
+    <div class="item"><span class="n">C2</span><div>
+      <h4>Competitor gap plan against the four real rivals</h4>
+      <p>Sorting Semrush by relevance surfaces the wrong four: the top result is a training vendor, and two others are supplement brands the clinic <em>resells</em> &mdash; which is why its product-tag pages rank for their brand terms.</p>
+      <p>The real rivals by keyword overlap and scale: <strong>therestorecenter.com</strong> (13 shared keywords, the most of any domain), <strong>innovativehealthdallas.com</strong> (4,875 keywords and 2,854 sessions &mdash; twenty times this site&rsquo;s footprint), <strong>nutritionandhealthcenter.com</strong>, <strong>epichealthflowermound.com</strong>. Baseline to beat: 243 keywords, 566 sessions.</p>
+      <span class="why">From Plan 03, with the competitor set corrected</span>
+    </div></div>
+    <div class="item"><span class="n">C3</span><div>
+      <h4>Two content pieces a month, produced from that plan</h4>
+      <p>Written against the gap list, not against a calendar. The refresh list writes itself from the audit: the 2016 methylation series, the two 2019 red-light posts, and the mold cluster that already holds position 7.37 on 5,305 impressions.</p>
+      <span class="why">From Plan 03&rsquo;s quarterly refresh, moved to monthly</span>
+    </div></div>
+
+    <div class="ws-group">
+      <h3>D &middot; AI search positioning</h3>
+      <p>Baseline: visibility 14, 6 mentions, 19 cited pages &middot; now unblocked by the Foundation Fix</p>
+    </div>
+    <div class="item"><span class="n">D1</span><div>
+      <h4>AI Overview, ChatGPT, Gemini and AI Mode optimization</h4>
+      <p>This is the workstream the Foundation Fix made possible. AI crawlers do not execute JavaScript, so while the Sucuri challenge was answering three of four homepage requests, the homepage simply did not exist for them &mdash; not as a delay, as its permanent content. That is cleared now.</p>
+      <p>The work is schema, FAQ depth, freshness signals and entity consistency, measured against the AI visibility baseline monthly.</p>
+      <span class="why">From Plan 03, unchanged</span>
+    </div></div>
+    <div class="item"><span class="n">D2</span><div>
+      <h4>Entity consolidation so the sources feeding AI answers agree</h4>
+      <p>Only three domains currently feed AI answers about this practice: google.com, drrodneyrussell.com and <strong>yelp.com</strong> &mdash; and Yelp is one of the three while carrying two duplicate listings. Once the Foundation Fix merge completes, the surviving record, the GBP record and the site&rsquo;s <code>sameAs</code> graph all have to say the same thing.</p>
+      <span class="why">YLP-01 &middot; new &mdash; not in either original plan</span>
+    </div></div>
+    <div class="item"><span class="n">D3</span><div>
+      <h4>An explicit AI crawler policy in robots.txt</h4>
+      <p>robots.txt currently has <strong>zero AI crawler directives</strong> &mdash; no GPTBot, no Google-Extended, no CCBot, no PerplexityBot. The file predates the question entirely. If the practice wants AI visibility, that should be a decision rather than an omission.</p>
+      <span class="why">WAF-01 &middot; new &mdash; not in either original plan</span>
+    </div></div>
+
+    <div class="ws-group">
+      <h3>E &middot; Architecture and measurement</h3>
+      <p>13 URLs sit deeper than three clicks &middot; duplicate hubs compete</p>
+    </div>
+    <div class="item"><span class="n">E1</span><div>
+      <h4>Settle the archive question, once</h4>
+      <p>Of 68 crawlable pages, 13 sit at depth 4 or 5 &mdash; nine of them archive pagination. Plan 03 sold &ldquo;pagination flattening&rdquo; and the audit also recommends <code>noindex</code> on the archives. Those are two answers to the same problem and you only need one. We pick one and apply it.</p>
+      <span class="why">AUTH-01 &middot; from Plan 03, deduplicated</span>
+    </div></div>
+    <div class="item"><span class="n">E2</span><div>
+      <h4>Resolve the duplicate hubs</h4>
+      <p><code>/services/</code> and <code>/category/services/</code> both return 200 and both list services; only one is in the sitemap. <code>/products/</code> is in the sitemap and links to no products, while <code>/shop/</code> links to 50 and is in no sitemap. Pick one of each and redirect the other.</p>
+      <span class="why">NAV-01 &middot; new &mdash; not in either original plan</span>
+    </div></div>
+    <div class="item"><span class="n">E3</span><div>
+      <h4>Monthly rank tracking, reporting and a strategy call</h4>
+      <p>Tracked against the locked baseline: 26 keywords in the top 10, 179 in positions 21&ndash;100, average position 13.4, 85% branded. Because of the bonus item below, the monthly report can be tied to booked appointments rather than to rankings alone.</p>
+      <span class="why">From Plan 03, unchanged</span>
+    </div></div>
+    <div class="item"><span class="n">E4</span><div>
+      <h4>Google Posts &mdash; cadence and topic strategy</h4>
+      <p>Reduced from what Plan 02 claimed. The profile is <strong>already posting</strong> &mdash; two posts published 4 August 2026 &mdash; so there is nothing to switch on. What is missing is consistency and a topic plan tied to the content in workstream C.</p>
+      <span class="why">GBP-01 &middot; from Plan 02, scope reduced to match reality</span>
+    </div></div>
+
+  </div>
+</section>
+
+<section id="bonus">
+  <div class="sec-head"><span class="sec-num">03</span><h2>Included at no charge</h2></div>
+  <p class="lede">Three things the audit found that were in <strong>none</strong> of the plans you were quoted. They are in this one, and they are not priced in &mdash; partly because two of them are quick, and mostly because the first one is what makes everything else provable.</p>
+
+  <div class="bonus" style="margin-top:24px">
+    <span class="tag">Bonus &middot; not previously scoped &middot; no additional cost</span>
+    <h3>Conversion tracking, built in week one</h3>
+    <p>Analytics currently records <strong>0 key events and $0.00 revenue</strong> while roughly 218 users a period reach a booking page. There is no way, today, to answer whether any marketing spend produced a patient.</p>
+    <div class="bitem">
+      <h4>1. GA4 key events for the actions that matter</h4>
+      <p>Clicks on the Jane booking link, both form submissions, and <code>tel:</code> taps on the practice number. Set up in week one, before the content work starts, so there is a clean pre-work baseline to compare against.</p>
+      <p><strong>Why it is free:</strong> it cannot be back-dated. Every month it does not exist is a month of this engagement that can only be reported in rankings. We would rather absorb it than hand you a report that cannot answer the only question that matters.</p>
+      <span class="why">GA-01 &middot; critical &middot; in no plan</span>
+    </div>
+    <div class="bitem">
+      <h4>2. Google Business Profile hours reconciliation</h4>
+      <p>Google publishes Monday&ndash;Thursday 10&ndash;5 with Friday closed. The website publishes 10&ndash;12 and 2&ndash;5, Friday by appointment. A patient reading Google calls at 1 PM and reaches nobody; a patient needing Friday reads &ldquo;closed&rdquo; and books elsewhere.</p>
+      <p>Fifteen minutes of work, sitting outside all three tiers, costing appointments right now.</p>
+      <span class="why">GBP-01 &middot; high &middot; in no plan</span>
+    </div>
+    <div class="bitem">
+      <h4>3. Desktop versus mobile diagnostic</h4>
+      <p>Search Console shows mobile outperforming desktop on every measure (4.44% CTR at position 8.1 against 1.60% at 17.8). Semrush shows the reverse &mdash; 20 mobile keywords against 243 on desktop. One of them is wrong, and it needs settling before rank tracking becomes meaningful.</p>
+      <span class="why">MOB-01 &middot; medium &middot; in no plan</span>
+    </div>
+  </div>
+</section>
+
+<section id="removed">
+  <div class="sec-head"><span class="sec-num">04</span><h2>What was removed, and why</h2></div>
+  <p class="lede">Eight items that appeared in the original Plan 02 or Plan 03 are not in this proposal. They come off for two different reasons, and the distinction matters when you present this.</p>
+
+  <div class="rsn">
+    <div class="paidbox">
+      <h4>Reason one</h4>
+      <b>4 items</b>
+      <p><strong>You have already paid for this work, or the site already had it.</strong> Charging for it again would be charging twice for the same thing. This is the category worth leading with in the conversation, because it is money the client is not being asked for.</p>
+      <p>Of the seven line items in the original Plan 02, <strong>two were work the Foundation Fix already covers</strong>, one was <strong>already live on the site</strong>, and one is a ten-minute toggle we absorbed rather than invoice.</p>
+      <ul>
+        <li>BreadcrumbList schema &mdash; Yoast already emits it sitewide</li>
+        <li>The 15 legacy-domain links &mdash; same links as the Foundation Fix</li>
+        <li>The 63 <code>/services/*</code> redirects &mdash; same template edit</li>
+        <li>Sitemap regeneration &mdash; absorbed into the Foundation Fix</li>
+      </ul>
+    </div>
+    <div class="scrbox">
+      <h4>Reason two</h4>
+      <b>4 items</b>
+      <p><strong>As written, these would not survive a question from the client.</strong> Either the promise cannot be delivered, the figure cannot be sourced, or doing it as described would create a risk.</p>
+      <p>Three of the four were kept in a corrected form &mdash; the work is real, the description was not. Only the <code>aggregateRating</code> item was replaced outright, because doing it the way it was quoted risks a Google manual action.</p>
+      <ul>
+        <li>&ldquo;Weekly Google Posts live&rdquo; &mdash; already publishing</li>
+        <li>FAQPage for rich results &mdash; Google restricted these in 2023</li>
+        <li>AggregateRating from third-party counts &mdash; against policy</li>
+        <li>&ldquo;Up to 654 keywords&rdquo; &mdash; no competitor in the data has 654</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="lede">Item by item, with the evidence behind each removal:</p>
+  <div class="scroller" style="margin-top:18px">
+    <table>
+      <thead><tr><th>Originally quoted</th><th>Status</th><th>Why it is gone</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="was">BreadcrumbList schema across 30+ pages<br><span class="mono" style="color:var(--muted)">Plan 02</span></td>
+          <td class="tagc"><span class="rm">Already exists</span></td>
+          <td class="why2">Yoast emits <code>BreadcrumbList</code> sitewide already &mdash; verified on every page checked. There is nothing to add. <strong>Service and FAQPage genuinely are at zero</strong>, and those stayed in as A1 and A2.</td>
+        </tr>
+        <tr>
+          <td class="was">15+ broken legacy-domain link fixes<br><span class="mono" style="color:var(--muted)">Plan 02</span></td>
+          <td class="tagc"><span class="rm paid">Already paid</span></td>
+          <td class="why2">These are the same 15 links as the Foundation Fix line item &ldquo;legacy domain redirect&rdquo; &mdash; all on one post, all pointing at the expired Squarespace subdomain. Billing them again would be billing the same work twice.</td>
+        </tr>
+        <tr>
+          <td class="was">The 63 legacy <code>/services/*</code> redirect links<br><span class="mono" style="color:var(--muted)">Proposed replacement for the item above</span></td>
+          <td class="tagc"><span class="rm paid">Already paid</span></td>
+          <td class="why2">Considered as a substitute, then dropped: they sit in the same shared template as the Foundation Fix 404 repairs, so the same single edit clears both. It is already covered.</td>
+        </tr>
+        <tr>
+          <td class="was">XML sitemap regeneration &mdash; indexable URLs only<br><span class="mono" style="color:var(--muted)">Plan 02</span></td>
+          <td class="tagc"><span class="rm paid">Absorbed</span></td>
+          <td class="why2">The highest-impact item across all three plans and also the smallest: 310 submitted URLs against 310 Google refuses, fixed by <strong>one Yoast toggle</strong>. Absorbed into the Foundation Fix rather than billed here &mdash; it should not wait 30 days for a new invoice.</td>
+        </tr>
+        <tr>
+          <td class="was">&ldquo;Weekly Google Posts cadence live&rdquo;<br><span class="mono" style="color:var(--muted)">Plan 02</span></td>
+          <td class="tagc"><span class="rm">Reduced</span></td>
+          <td class="why2">Kept, but not as setup. The profile is already publishing &mdash; two posts on 4 August 2026 &mdash; so &ldquo;live&rdquo; overstates it. Now E4, sold as cadence and topic strategy.</td>
+        </tr>
+        <tr>
+          <td class="was">AggregateRating from the Google and Birdeye counts<br><span class="mono" style="color:var(--muted)">Plan 03</span></td>
+          <td class="tagc"><span class="rm">Non-compliant</span></td>
+          <td class="why2">Marking up reviews collected on third-party platforms as the site&rsquo;s own <code>aggregateRating</code> is outside Google&rsquo;s structured-data policy and risks a manual action. Self-serving <code>LocalBusiness</code> review markup has also not produced SERP stars since 2019, so the visible benefit would not have arrived either. Replaced by A3.</td>
+        </tr>
+        <tr>
+          <td class="was">FAQPage sold for rich results<br><span class="mono" style="color:var(--muted)">Plan 02</span></td>
+          <td class="tagc"><span class="rm">Reframed</span></td>
+          <td class="why2">Google restricted FAQ rich results to authoritative health and government sites in 2023. A private clinic will not get the accordions. The work stayed (A2) because it feeds AI answers, but it is sold for that, not for the SERP.</td>
+        </tr>
+        <tr>
+          <td class="was">&ldquo;Competitor gap plan &mdash; up to 654 keywords&rdquo;<br><span class="mono" style="color:var(--muted)">Plan 03</span></td>
+          <td class="tagc"><span class="rm">Unsourced</span></td>
+          <td class="why2">No competitor in the Semrush export has 654 keywords &mdash; the nearest are 699, 621 and 604. The figure would not survive being asked about. C2 names the four real rivals and their actual counts instead.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="terms">
+  <div class="sec-head"><span class="sec-num">05</span><h2>What happens the first month</h2></div>
+  <p class="lede">Two things drive the order. Conversion tracking goes first because it cannot be back-dated &mdash; every week it does not exist is a week that can only be reported in rankings. Then the fastest-moving item, so there is a number to show at the first report.</p>
+
+  <div class="wk" style="margin-top:24px">
+    <div class="wk-row bon">
+      <span class="wk-when">Week 1</span>
+      <div>
+        <h4>All three bonus items, plus the gap analysis</h4>
+        <p>GA4 key events for the Jane booking link, both forms and <code>tel:</code> taps. The Google Business Profile hours reconciled against whatever the practice confirms on the kickoff call. The desktop-versus-mobile discrepancy settled. And the Keyword Gap export run against the four competitors, which produces the content backlog everything else draws from.</p>
+        <span class="ids">GA-01 &middot; GBP-01 &middot; MOB-01 &middot; C2</span>
+      </div>
+    </div>
+    <div class="wk-row">
+      <span class="wk-when">Week 2</span>
+      <div>
+        <h4>The nine titles and descriptions</h4>
+        <p>The six page-one URLs converting 14,853 impressions into 26 clicks, led by <code>/mold-biotoxin-illness/</code> at position 7.37 with no meta description at all. This is deliberately first among the real work: it is the only item that can move a number inside 30 days, so it is what the month-one report is built on.</p>
+        <span class="ids">B1 &middot; CTR-01</span>
+      </div>
+    </div>
+    <div class="wk-row">
+      <span class="wk-when">Week 3</span>
+      <div>
+        <h4>The booking path rebuilt</h4>
+        <p><code>/schedule-now/</code> holds position 5.08 on 2,749 impressions with 35 words on the page. Consolidate the three competing pages to one, put the Jane widget and the phone number above the fold. Sequenced right after week 2 on purpose &mdash; there is no point improving click-through into a 35-word dead end.</p>
+        <span class="ids">B3 &middot; GA-02</span>
+      </div>
+    </div>
+    <div class="wk-row">
+      <span class="wk-when">Week 4</span>
+      <div>
+        <h4>First two content pieces, then the report and the call</h4>
+        <p>Written against the top two clusters from the gap backlog. The report shows the week-1 baseline against week-4 actuals, and from this month forward it can speak to booked appointments rather than rankings alone.</p>
+        <span class="ids">C3 &middot; E3</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="lede" style="margin-top:22px"><strong>Months 2 and 3</strong> carry the rest of the one-time work &mdash; the schema graph, the FAQ content, the thin pages, the architecture and the four geo landing pages &mdash; alongside the same two content pieces, four Google Posts, report and call every month.</p>
+
+  <div class="sec-head" style="margin-top:52px"><span class="sec-num">06</span><h2>What changes from month four</h2></div>
+  <div class="esc">
+    <span class="tag">Stated now, not when you ask</span>
+    <h3>The one-time fixes run out. The output goes up instead of the price coming down.</h3>
+    <p>By the end of month three the technical and structural work is finished &mdash; it does not need doing twice. Rather than charge the same for less, the monthly quota expands. Same $2,250, more production.</p>
+    <div class="escgrid">
+      <div>
+        <h5>Content</h5>
+        <b>2 pieces <span class="arrow">&rarr;</span> 3 pieces a month</b>
+        <p>Nine of the roughly fifteen clusters identified in the gap analysis are still unbuilt at the end of month three. This is what clears them.</p>
+      </div>
+      <div>
+        <h5>Geo coverage</h5>
+        <b>4 pages <span class="arrow">&rarr;</span> ongoing expansion</b>
+        <p>The first four cover Dallas, Fort Worth and the two highest-volume service terms. Next comes Plano, Frisco, Southlake and Flower Mound &mdash; where the competitors in the gap set actually sit.</p>
+      </div>
+      <div>
+        <h5>On-page sweep</h5>
+        <b>Service pages done <span class="arrow">&rarr;</span> the remaining 31</b>
+        <p>The seventeen service pages are finished by month three. Conversion, info and blog pages continue at roughly eight a month until all 48 in scope are done.</p>
+      </div>
+      <div>
+        <h5>New workstream</h5>
+        <b>Monthly conversion optimisation</b>
+        <p>Impossible before month four, because nothing was tracked. Once there are three months of booking data, the booking path can be tested rather than guessed at.</p>
+      </div>
+      <div>
+        <h5>New workstream</h5>
+        <b>Review velocity</b>
+        <p>Google has 203 reviews, Birdeye has 225. Once the request flow is routed correctly, the target becomes rate &mdash; reviews per month, which is what the local pack actually weighs.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="lede" style="margin-top:24px"><strong>And the honest version of why this renews.</strong> The gap analysis identifies roughly fifteen clusters. The initial term delivers six. The remaining nine are the month-three conversation: here is what we found, here is what we built, here is what is left and what each one is worth. Renewal on a backlog, not on faith.</p>
+
+  <div class="foot">
+    <p><strong>One thing to settle before signing.</strong> The Google Business Profile and the website disagree about the practice&rsquo;s hours. Everything in workstream A inherits whichever version is correct &mdash; the schema, the citations and the profile all have to say the same thing &mdash; so the practice needs to confirm the real schedule in week one. It is the first question on the kickoff call.</p>
+    <p><strong>What this plan assumes.</strong> That the Foundation Fix has shipped and been verified: the Sucuri challenge cleared, the 310 product-tag URLs suppressed, the Yelp merge filed, and the schema deployed. Workstream D in particular cannot start before the firewall is confirmed clear, because AI crawlers cannot execute the JavaScript challenge at all.</p>
+    <div class="signoff">
+      <div class="logo" role="img" aria-label="LPYD Digital Studio"><span>LPYD Digital Studio</span></div>
+      <div>
+        Los Cabos, Baja California Sur &middot; lpydstudio.com<br>
+        Prepared 7 September 2026 &middot; Revised after the baseline audit
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var bL = document.getElementById('thLight'), bD = document.getElementById('thDark');
+  function setTheme(t){
+    root.setAttribute('data-theme', t);
+    bL.setAttribute('aria-pressed', String(t === 'light'));
+    bD.setAttribute('aria-pressed', String(t === 'dark'));
+    try { localStorage.setItem('lpyd-theme', t); } catch(e) {}
+  }
+  bL.addEventListener('click', function(){ setTheme('light'); });
+  bD.addEventListener('click', function(){ setTheme('dark'); });
+  setTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+})();
+</script>
+
+</html>
